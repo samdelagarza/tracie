@@ -1,0 +1,19 @@
+<div class="hide item {{recommendation}}">
+    <h2>{{companyName}}</h2>
+
+    <form class="form-stacked" action="">
+        <div style='display:block; padding-bottom: 10px'>
+            <div class="span2">
+                <label for="symbol">Symbol</label>
+                <input id="symbol" type="text" value="{{symbol}}" style='width:40px;'>
+            </div>
+            <div class="span2">
+                <label for="shares">Shares </label>
+                <input id="shares" style="width: 120px;" type="text" value="{{quantity}}"/>
+            </div>
+        </div>
+        <button class="btn">Bid: {{quote.BidPriceDisplay}}</button>
+        <button class="btn">Last: {{quote.LastPriceDisplay}}</button>
+        <button class="btn">Ask: {{quote.AskPriceDisplay}}</button>
+    </form>
+</div>

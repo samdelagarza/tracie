@@ -1,0 +1,256 @@
+body {
+    padding: 50px;
+    background: url("../images/black-Linen.png") repeat right top;
+}
+
+.container-fluid > .content {
+    margin-left: 310px !important;
+}
+
+.sidebar {
+    width: 300px !important;
+}
+
+table th, table td {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    font-size: 12px;
+}
+
+div.app {
+    padding-top: 60px;
+}
+
+div.logo {
+    color: rgba(240, 240, 240, .9);
+    font-weight: 900;
+    font-size: 50px;
+    width: 100%;
+    height: 60px;
+}
+
+.text-emboss {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .9);
+}
+
+div.message {
+    font-family: Helvetica, Arial, Serif;
+    font-weight: normal;
+    padding-top: 0px;
+    font-size: 16px;
+    text-shadow: 1px 1px rgba(50, 50, 50, .2);
+    color: rgba(190, 190, 190, .7);
+}
+
+input.tracieInput {
+    font-size: 22px;
+    width: 90%;
+    height: 25px;
+    padding: 10px;
+    color: rgba(0, 0, 0, .9);
+    font-weight: bold;
+}
+
+div.responseContainer {
+    margin: 0 auto;
+    padding: 5px;
+    min-height: 500px;
+
+    text-align: left;
+    font-size: 17px;
+}
+
+div.response {
+    display: none;
+    font-family: helvetica, arial;
+    font-weight: bold;
+    border: solid 1px rgba(255, 255, 255, .7);
+    color: rgba(225, 225, 225, .9);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 250px;
+    text-shadow: 1px 1px rgba(255, 255, 255, .1);
+}
+
+div.response .quote {
+    font-family: Garamond, serif;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+div.response:after {
+    content: "";
+    border: solid 10px transparent; /* set all borders to 10 pixels width */
+    border-top-color: rgba(160, 160, 160, 1); /* the callout */
+    border-bottom: 0; /* we do not need the bottom border in this case */
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    bottom: -20px; /* border-width of the :after element + padding of the root element */
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+div.tracie.response {
+    font-weight: normal;
+    border: solid 1px rgba(255, 255, 255, .3);
+    width: 250px;
+    margin-left: 20px;
+}
+
+div.tracie.response.question {
+    background-color: rgba(255,255,255,.2);
+    font-size: 20px;
+}
+
+div.tracie.response:after {
+    content: "";
+    border: solid 10px transparent; /* set all borders to 10 pixels width */
+    border-top-color: rgba(100, 100, 100, .7); /* the callout */
+    border-bottom: 0; /* we do not need the bottom border in this case */
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    bottom: -20px; /* border-width of the :after element + padding of the root element */
+    margin-left: auto;
+    margin-right: -5px;
+}
+
+div.response div {
+    color: lime;
+    padding-top: 10px;
+
+    text-shadow: 1px 1px rgba(0, 0, 0, .4);
+}
+
+a {
+    color: #00B7FF;
+}
+
+.red {
+    background-color: red;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.blue {
+    background-color: blue;
+}
+
+div.speech {
+
+}
+
+div.desktop {
+    background: url("../images/ricepaper2.png") repeat right top;
+    min-height: 700px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+div.desktop .item h2 {
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+div.desktop .item {
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, .3);
+    margin-bottom: 40px;
+}
+
+div.desktop .item.sell {
+    border-left: solid 5px red;
+    padding-left: 10px;
+}
+
+div.desktop .item.buy {
+    border-left: solid 5px green;
+    padding-left: 10px;
+}
+
+div.desktop .item.hold {
+    border-left: solid 5px rgba(0, 0, 0, .4);
+    padding-left: 10px;
+}
+
+div.desktop .section div.body {
+    padding: 5px;
+}
+
+tr.red td {
+    background-color: rgba(255, 0, 0, .3) !important;
+}
+
+div.corkboard {
+    background: url("../images/cork.bg.gif") repeat;
+    border-radius: 3px;
+    min-height: 730px;
+    padding: 5px;
+}
+
+div.stickynote {
+    /*min-height: 30px;*/
+
+    background: -moz-linear-gradient(center top, #FFEE66, #F5DA41, #F6EF97) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FE6), to(#F6EF97), color-stop(.6, #F5DA41));
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 30px;
+    padding: 9px;
+    position: relative;
+    text-shadow: 0 1px 0 #F6EF97;
+    min-width: 25px;
+    min-height: 70px;
+}
+
+div.stickynote.charts {
+    min-height: 100px;
+}
+
+div.stickynote .content:before {
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 2px rgba(250, 0, 0, 0.15);
+    content: "";
+    display: block;
+    height: 25px;
+    left: 30px;
+    opacity: 1;
+    position: absolute;
+    top: -30px;
+    width: 20px;
+}
+
+div.stickynote .content {
+    text-shadow: none;
+    position: absolute;
+    top: 15px;
+    min-height: 60px;
+    font-family: helvetica, arial;
+    font-size: 20px;
+}
+
+div.stickynote .content .symbol {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,.25);
+}
+
+div.stickynote .content div.quote {
+    padding-top: 4px;
+    font-size: .7em
+}
+
+div.stickynote .sparklineCharts {
+    padding-top: 5px;
+    height: 0px;
+}

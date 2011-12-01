@@ -1,0 +1,84 @@
+<div class="hide item {{recommendation}}">
+    <div class="row">
+        <div class="span8">
+            <div class="span8" style="border-bottom: 2px solid #ccc; margin-bottom: 20px;">
+                <h2>{{action}}: {{symbol.Name}} ({{symbol.Description}})</h2>
+            </div>
+            <div class="row">
+                <div class="span2"><span
+                        style="font-size:3em;border-radius: 7px;background-color: #000;padding: 2px 7px 2px;color:#fff;">{{score}}</span>
+                </div>
+                <div class="span4"><strong>The analysis engine recommends a <span
+                        class="label warning">hold</span> action.</strong></div>
+                <div class="span2">Buying Power: <h3>$928,028</h3></div>
+            </div>
+            <div class="row" style='padding-top: 20px;'>
+                <div class="span5">
+                    <div class="section">
+                        <h5>News Headlines</h5>
+
+                        <div class="body">
+                            <ul>
+                                {{#newsStories}}
+                                <li><a href="{{url}}">{{name}}</a></li>
+                                {{/newsStories}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="section">
+                        <h5>Social Sentiment</h5>
+
+                        <img src="/images/charts/sentiment.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="span8">
+                <div class="section">
+                    <h5>Positions &amp; Interests</h5>
+
+                    <div class="body">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><strong>Symbol</strong></td>
+                                <td><strong>Shares</strong></td>
+                                <td><strong>Market Value</strong></td>
+                                <td><strong>P/L</strong></td>
+                            </tr>
+                            {{#positions}}
+                            <tr class="alert-message error">
+                                <td>{{symbol}}</td>
+                                <td>{{shares}}</td>
+                                <td>{{value}}</td>
+                                <td>{{profitLoss}}</td>
+                            </tr>
+                            {{/positions}}
+                            {{#relatedPositions}}
+                            <tr class="">
+                                <td>{{symbol}}</td>
+                                <td>{{shares}}</td>
+                                <td>{{value}}</td>
+                                <td>{{profitLoss}}</td>
+                            </tr>
+                            {{/relatedPositions}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="span13">
+            <div class="section">
+                <h2>{{price.bid}}</h2>
+
+                <div class="stockChart" style='min-height: 300px;'>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

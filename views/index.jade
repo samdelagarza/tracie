@@ -1,0 +1,14 @@
+div.app
+    form
+        div.container-fluid
+            div.row
+                div.speech.span5(style="text-align:center;")
+                    div.logo.text-emboss= title
+                        div.text-emboss.message your personal trading concierge
+                    div(style="padding-top: 30px;")
+                        input.tracieInput(type="text", x-webkit-grammar="grammars/trader-grammar.grxml", id="speech", error="", maxlength="2048")
+                    div(style="text-align:center;")
+                        div.responseContainer
+                div.desktop.span8
+                div.corkboard.span2
+    #demo1player

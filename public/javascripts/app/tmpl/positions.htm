@@ -1,0 +1,20 @@
+<div class="body">
+    <table>
+        <tbody>
+        <tr>
+            <td><strong>Symbol</strong></td>
+            <td><strong>Shares</strong></td>
+            <td><strong>Market Value</strong></td>
+            <td><strong>P/L</strong></td>
+        </tr>
+        {{#positions}}
+        <tr class="alert-message error">
+            <td>{{symbol}}</td>
+            <td>{{shares}}</td>
+            <td>{{value}}</td>
+            <td>{{profitLoss}}</td>
+        </tr>
+        {{/positions}}
+        </tbody>
+    </table>
+</div>
